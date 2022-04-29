@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="We're Liorganic, your foods, fruits &amp; vegetables delivery service without subscription fees. If you have no time for Shopping and cooking, let us take care of that."> 
+        <link rel="stylesheet" type="text/css" href="Vendor/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="Vendor/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="Resource/css/style.css">
+        <link rel="stylesheet" type="text/css" href="Resource/css/queries.css">
+        <link href="https://fonts.googleapis.com/css?family=Libre+Franklin&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="Resource/fav-icon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="Resource/fav-icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="Resource/fav-icon/favicon-16x16.png">
+        <link rel="manifest" href="Resource/fav-icon/site.webmanifest">
+        <link rel="mask-icon" href="Resource/fav-icon/safari-pinned-tab.svg" color="#6dff63">
+        <link rel="shortcut icon" href="Resource/fav-icon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#6dff63">
+        <meta name="msapplication-config" content="Resource/fav-icon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        
+        <script src="https://kit.fontawesome.com/e6dea43f5b.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectivizr/1.0.2/selectivizr-min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <title>CodeAlgo - Student Sign in</title>
+    </head>
+    <body>
+    <script src="Vendor/js/jquery.waypoints.min.js"></script>
+    <script src="Resource/js/script.js"></script>
+        <header id="header">
+            <nav class="sticky">
+                <div class="row main-nav">
+                    <img src="Vendor/icon/coding-white.svg" alt="Liorgan-logo" class="logo">
+                    <ul class="nav-section hover" id="nav-ul">
+                        <li><div><a class="about-us main-link" href="#">&nbsp;Learn&nbsp;</a></div></li>
+                        <li><div><a class="workings main-link" href="#">&nbsp;MCQ&nbsp;</a></div></li>
+                        <li><div><a class="sign-up main-link" href="#">&nbsp;Assignment&nbsp;</a></div></li>
+                        <li><div><a class="sign-up main-link" href="#">&nbsp;Profile&nbsp;</a></div></li>
+                        <li><div class="user-name"><a class="sign-up main-link" href="#">&nbsp;Guest&nbsp;</a></div></li>
+                    </ul>
+                    <a class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="row">
+                <h3>Student Sign in</h3>
+                <ul class="workouts">
+                    <form class="form">
+                      
+                      <div class="form__row">
+                        <label class="form__label">Name</label>
+                        <input class="form__input form__input--distance"/>
+                      </div>
+                      
+                      <div class="form__row">
+                        <label class="form__label">Email</label>
+                        <input class="form__input form__input--distance"/>
+                      </div>
+                      <div class="form__row">
+                        <label class="form__label">Reg No</label>
+                        <input class="form__input form__input--distance"/>
+                      </div>
+                      <div class="form__row">
+                        <label class="form__label">Password</label>
+                        <input type ="password"
+                          class="form__input form__input--duration"
+                        />
+                      </div>
+                      <button class="form__btn sign-in-btn">Sign in</button>
+                      <button class="form__btn sign-in-btn btn2">Continue with login</button>
+                    </form>
+                  </ul>
+            </div>
+        </header>
+        <!-- <section id="section-features" class="js--section-features" >
+            <div class="row long-copy">
+                <div class="row">
+                    <h2 id="features-title">&nbsp;Get foods healthy &mdash; not unhealthy foods&nbsp;</h2>
+                </div>
+                <div class="row">
+                    <p class="main-para">Hello, we’re Liorganic, your foods, fruits &amp; vegetables delivery service without subscription fees. We know you’re always busy. No time for Shopping and cooking. Let us take care of that. Good for your health, the environment, and it also tastes better!</p>
+                </div>
+            </div>
+            <div class="row short-copy">
+                <div class="col span-1-of-4 box box-1 hover">
+                    <i class="fas fa-infinity icon-big icon-infinity"></i>
+                    <h3>Available for 24/7</h3>
+                    <p>Our service is available for 7 days/week. You can also choose to order more flexibly if that's your style.</p>
+                </div>
+                <div class="col span-1-of-4 box box-2 hover">
+                    <i class="fas fa-seedling icon-big icon-seedling"></i>
+                    <h3>100% organic</h3>
+                    <p>All the foods, animals used in cooking, fruits &amp; vegetables which are in our list are fresh, and organic.</p>
+                </div>
+                <div class="col span-1-of-4 box box-3 hover">
+                    <i class="fas fa-hand-holding-heart icon-big icon-hand-holding-heart"></i>
+                    <h3>Hygenic</h3>
+                    <p>We work with the best chef in each town to ensure that the food you wanted to eat is hygene.</p>
+                </div>
+                <div class="col span-1-of-4 box box-4 hover">
+                    <i class="fas fa-clock icon-big icon-clock"></i>
+                    <h3>Delivered in 20 mins</h3>
+                    <p>You're only twenty minutes away from our restaurent and shop, delivered right to your home.</p>
+                </div>
+            </div>
+        </section>
+        <section id="section-products" class="js--section-product">
+            <div class="row">
+                <div class="col span-1-of-2 product-box">
+                    <img src="Resource/css/img/deli-img/fruits.jpg" alt="Fruits" class="product-img hover" id="fruits" >
+                </div>
+                <div class="col span-1-of-2 product-box">
+                    <img src="Resource/css/img/deli-img/vegetables.jpg" alt="Vegetables" class="product-img hover" id="vege">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 product-box">
+                    <img src="Resource/css/img/deli-img/traditional%20meals.jpg" alt="Traditional Meals" class="product-img hover" id="tradi-food" > 
+                </div>
+                <div class="col span-1-of-2 product-box">
+                    <img src="Resource/css/img/deli-img/fast%20food.jpg" alt="Fast Foods" id="fast-food" class="product-img hover">
+                </div>
+            </div>
+        </section>
+        <section id="section-steps" class="js--section-steps">
+            <div class="row steps-heading">
+                <h2>&nbsp;How It Works&nbsp;</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 img-sec">
+                    <img src="Resource/css/svg/working-img.svg" class="step-img" alt="Working Image">
+                    <h3 class="robot-title">Robot Model We Are Using For Delivery</h3>
+                </div>
+                <div class="col span-1-of-2 step-box">
+                    <div class="top-bar">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </div>
+                    <div class="work-step hover" id="work-step-1">
+                        <div>1</div>
+                        <p>Order your Foods, Fruits &amp; Vegetables using our website or mobile app. Or you can even call us.</p>
+                    </div>
+                    <div class="work-step hover" id="work-step-2">
+                        <div>2</div>
+                        <p>Payment for your order can be cash on delivery or online payment.</p>
+                    </div>
+                    <div class="work-step hover" id="work-step-3">
+                        <div>3</div>
+                        <p>One of our shops near you receives your order details and they will deliver your order to you less than 20 minutes.</p>
+                    </div>
+                    <div class="work-step hover" id="work-step-4">
+                        <div>4</div>
+                        <p id="section-city-scroll">One or more shops will be alloted for you, depending on various types of items in your order.</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="section-steps-after"></div>
+        </section>   
+        <section id="section-cities" class="js--section-cities">
+            <h2 class="row cities-main-title">&nbsp;We're currently in these cities&nbsp;</h2>
+            <div class="row js--wp-1">
+                <div class="col span-1-of-5 cities-card san-francisco hover">
+                    <img src="Resource/css/img/cities/san-francisco-san-francisko.jpg" alt="San Francisco">
+                    <h3>San Francisco</h3>
+                    <div class="cities-lists sf-lists">
+                        <i class="fas fa-users cities-icon cities-users"></i> 
+                        <p>3700+ Happy Eaters</p>
+                        <div class="clear-fix"></div>
+                        <ion-icon name="star" class="cities-icon cities-star"></ion-icon>
+                        <p>160+ Top Chefs</p>
+                        <div class="clear-fix"></div>
+                        <i class="fab fa-twitter cities-icon cities-twitter"></i>
+                        <a href='#'>@liorganic_sf</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-5 cities-card mumbai hover">
+                    <img src="Resource/css/img/cities/mumbai.jpg" alt="Mumbai">
+                    <h3>Mumbai</h3>
+                    <div class="cities-lists mb-lists">
+                        <i class="fas fa-users cities-icon cities-users"></i> 
+                        <p>2300+ Happy Eaters</p>
+                        <div class="clear-fix"></div>
+                        <ion-icon name="star" class="cities-icon cities-star"></ion-icon>
+                        <p>110+ Top Chefs</p>
+                        <div class="clear-fix"></div>
+                        <i class="fab fa-twitter cities-icon cities-twitter"></i>
+                        <a href='#'>@liorganic_mb</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-5 cities-card tokyo hover">
+                    <img src="Resource/css/img/cities/tokyo.jpg" alt="Tokyo">
+                    <h3>Tokyo</h3>
+                    <div class="cities-lists ty-lists">
+                        <i class="fas fa-users cities-icon cities-users"></i>  
+                        <p>1800+ Happy Eaters</p>
+                        <div class="clear-fix"></div>
+                        <ion-icon name="star" class="cities-icon cities-star"></ion-icon>
+                        <p>65+ Top Chefs</p>
+                        <div class="clear-fix"></div>
+                        <i class="fab fa-twitter cities-icon cities-twitter"></i>
+                        <a href='#'>@liorganic_ty</a>
+                    </div>
+                </div>
+                <div class="col span-1-of-5 cities-card sydney hover">
+                    <img src="Resource/css/img/cities/sydney.jpg" alt="Sydney">
+                    <h3>Sydney</h3>
+                    <div class="cities-lists sy-lists">
+                        <i class="fas fa-users cities-icon cities-users"></i> 
+                        <p>1600+ Happy Eaters</p>
+                        <div class="clear-fix"></div>
+                        <ion-icon name="star" class="cities-icon cities-star"></ion-icon>
+                        <p>60+ Top Chefs</p>
+                        <div class="clear-fix"></div>
+                        <i class="fab fa-twitter cities-icon cities-twitter"></i>
+                        <a href='#'>@liorganic_sy</a>
+                    </div>
+                </div> 
+                <div class="col span-1-of-5 cities-card london hover">
+                    <img src="Resource/css/img/cities/london.jpg" alt="London">
+                    <h3>London</h3>
+                    <div class="cities-lists ln-lists">
+                        <i class="fas fa-users cities-icon cities-users"></i> 
+                        <p>1200+ Happy Eaters</p>
+                        <div class="clear-fix"></div>
+                        <ion-icon name="star" class="cities-icon cities-star"></ion-icon>
+                        <p>50+ Top Chefs</p>
+                        <div class="clear-fix"></div>
+                        <i class="fab fa-twitter cities-icon cities-twitter"></i>
+                        <a href='#'>@liorganic_ln</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section-form" class="js--section-form">
+            <div class="row">
+                <h2>&nbsp;Sign up&nbsp;</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="#" class="sign-form">
+                    <div class="form-mobile">
+                            <lable name="name" class="col span-1-of-2 lable">Name</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="text" name="name" id="name" placeholder="Your Name" required>
+                        </div>
+                        <lable name="number" class="col span-1-of-2 lable">Age</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="number" name="number" id="number" min="18" required>
+                        </div>
+                        <lable name="email" class="col span-1-of-2 lable">Email</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="email" name="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <lable name="gender" class="col span-1-of-2 lable">Gender</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <select name="gender" id="gender">
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="custom">Custom</option>
+                            </select>
+                        </div>
+                        <lable name="update" class="col span-1-of-2 lable">Liorganic's Update Required?</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <input type="checkbox" name="update" id="update" checked>Yes
+                        </div>
+                        <lable name="address" class="col span-1-of-2 lable">Address</lable>
+                        <div class="span-1-of-12"></div>
+                        <div class="col span-1-of-2">
+                            <textarea name="address" placeholder="Type Your Address" required></textarea>
+                        </div>
+
+                    </div>
+                    <div class="row sign-in">
+                        <input type="submit" value="Sign In" class="sign-in-btn">
+                    </div>
+                </form>
+            </div>   
+        </section>
+        <footer id="footer-id">
+            <div class="row">
+                <div class="col span-1-of-2">
+                    <ul class="footer-nav">
+                        <li><div><a href="#footer-id">Blog</a></div></li>
+                        <li><div><a href="#footer-id">Press</a></div></li>
+                        <li><div><a href="#footer-id">iOS App</a></div></li>
+                        <li><div><a href="#footer-id">Android App</a></div></li>
+                    </ul>
+                    <a class="footer-nav-icon"><i class="fas fa-bars"></i></a>
+                </div>
+                <div class="col span-1-of-2">
+                    <ul class="social-links">
+                        <li>
+                            <a href="#footer-id"><i class="fab fa-facebook-square"></i></a>
+                        </li>
+                        <li><a href="#footer-id"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#footer-id"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#footer-id"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-para">
+                <p>Copyright &copy; 2020 by Liorganic. All rights reserved.</p>
+            </div>
+        </footer> -->
+    </body>
+    
+</html>
+
+
