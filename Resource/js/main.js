@@ -82,7 +82,7 @@ class Database {
     #currentAccount;
     constructor(){
         this._getLocalStorage();
-        form.addEventListener('submit', this._checkingByEntering.bind(this));
+        form.addEventListener('keypress', this._checkingByEntering.bind(this));
         btnSignin.addEventListener('click', this._checkingByClicking.bind(this));
     }
     
@@ -111,17 +111,18 @@ class Database {
 
     _checkingByEntering(e){
         e.preventDefault();
+        if(e.keyCode !== 13) return;
         const firstName = firstNameBox.value;
         const lastName = lastNameBox.value;
         const email = emailBox.value;
         const regno = +regnoBox.value;
         const password = passwordBox.value;
         
-        if (firstName === document.activeElement){
+        if (firstNameBox === document.activeElement){
             lastNameBox.focus();
             return ;
         }
-        if (lastName === document.activeElement){
+        if (lastNameBox === document.activeElement){
             emailBox.focus();
             return ;
         }
