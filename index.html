@@ -43,7 +43,7 @@
                         <li><div><a class="workings main-link" href="#">&nbsp;MCQ&nbsp;</a></div></li>
                         <li><div><a class="sign-up main-link" href="#">&nbsp;Assignment&nbsp;</a></div></li>
                         <li><div><a class="sign-up main-link" href="#">&nbsp;Profile&nbsp;</a></div></li>
-                        <li><div class="user-name"><a class="sign-up main-link" href="#"><div id="name"></div></a></div></li>
+                        <li><div class="user-name"><a class="sign-up main-link" href="#">&nbsp;Guest&nbsp;</a></div></li>
                     </ul>
                     <a class="mobile-nav-icon"><i class="fas fa-bars"></i></a>
                 </div>
@@ -54,22 +54,27 @@
                     <form class="form">
                       
                       <div class="form__row">
-                        <label class="form__label">Name</label>
-                        <input class="form__input form__input--distance"/>
+                        <label class="form__label">First Name</label>
+                        <input class="form__input form__input--distance" id="firstName-box"/>
+                      </div>
+                      
+                      <div class="form__row">
+                        <label class="form__label">Last Name</label>
+                        <input class="form__input form__input--distance" id="lastName-box"/>
                       </div>
                       
                       <div class="form__row">
                         <label class="form__label">Email</label>
-                        <input class="form__input form__input--distance"/>
+                        <input class="form__input form__input--distance" id="email-box"/>
                       </div>
                       <div class="form__row">
                         <label class="form__label">Reg No</label>
-                        <input class="form__input form__input--distance"/>
+                        <input class="form__input form__input--distance" id="reg-box"/>
                       </div>
                       <div class="form__row">
                         <label class="form__label">Password</label>
                         <input type ="password"
-                          class="form__input form__input--duration"
+                          class="form__input form__input--duration" id="password-box"
                         />
                       </div>
                       <button class="form__btn sign-in-btn">Sign in</button>
