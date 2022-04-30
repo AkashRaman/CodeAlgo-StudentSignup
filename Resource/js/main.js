@@ -160,6 +160,15 @@ class Database {
             return ;
         }
 
+        const foundedAccount = this.#accounts.find(
+            account => (account.type == 'teacher' && (account.email === email || account.regno === regno))
+          );
+
+        if(foundedAccount){
+            alert('There is a matching account');
+            return ;
+        }
+
         this.#currentAccount = new Student(firstName,lastName,email,regno,password);
         this.#accounts.push(this.#currentAccount)
         localStorage.removeItem('currentAccount')
