@@ -155,11 +155,6 @@ class Database {
             return;
         }
 
-        if(!this.#accounts){
-            alert('There is no matching account');
-            return ;
-        }
-
         const foundedAccount = this.#accounts.find(
             account => (account.type == 'teacher' && (account.email === email || account.regno === regno))
           );
