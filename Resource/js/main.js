@@ -8,7 +8,7 @@ const emailBox = document.getElementById('email-box');
 const regnoBox = document.getElementById('regno-box');
 const passwordBox = document.getElementById('password-box');
 const form = document.querySelector('.form');
-const btnLogin = document.querySelector('#btn-login');
+const btnSignin = document.querySelector('#btn-signin');
 
 // const guest = {
 //     name: 'Guest',
@@ -83,7 +83,7 @@ class Database {
     constructor(){
         this._getLocalStorage();
         form.addEventListener('submit', this._checkingByEntering.bind(this));
-        btnLogin.addEventListener('click', this._checkingByClicking.bind(this));
+        btnSignin.addEventListener('click', this._checkingByClicking.bind(this));
     }
     
     _getLocalStorage(){
