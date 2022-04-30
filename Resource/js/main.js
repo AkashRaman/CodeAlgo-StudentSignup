@@ -156,7 +156,7 @@ class Database {
         }
 
         const foundedAccount = this.#accounts.find(
-            account => (account.type == 'teacher' && (account.email === email || account.regno === regno))
+            account => (account.type == 'student' && (account.email === email || account.regno === regno))
           );
 
         if(foundedAccount){
