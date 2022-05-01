@@ -8,7 +8,8 @@ const emailBox = document.getElementById('email-box');
 const regnoBox = document.getElementById('regno-box');
 const passwordBox = document.getElementById('password-box');
 const form = document.querySelector('.form');
-const btnSignin = document.querySelector('#btn-signin');
+const btnSignup = document.querySelector('#btn-signup');
+const btnCWLogin = document.querySelector('#btn-cwlogin');
 
 // const guest = {
 //     name: 'Guest',
@@ -83,12 +84,19 @@ class Database {
     constructor(){
         this._getLocalStorage();
         form.addEventListener('keypress', this._checkingByEntering.bind(this));
-        btnSignin.addEventListener('click', this._checkingByClicking.bind(this));
+        btnSignup.addEventListener('click', this._checkingByClicking.bind(this));
+        btnCWLogin.addEventListener('click', this._locationToLogin.bind(this));
     }
     
+    _locationToLogin(e){
+        e.preventDefault();
+        location.href = "https://akashraman.github.io/CodeAlgo-StudentLogin/"
+    }
+
     _getLocalStorage(){
         this.#currentAccount = JSON.parse(localStorage.getItem('currentAccount'));
         this.#accounts = JSON.parse(localStorage.getItem('accounts'));
+        if(!this.#accounts) this.#accounts = [];
         console.log(this.#accounts);
         console.log(this.#currentAccount);
     }
@@ -172,6 +180,7 @@ class Database {
         localStorage.removeItem('accounts')
         localStorage.setItem('currentAccount',JSON.stringify(this.#currentAccount));
         localStorage.setItem('accounts',JSON.stringify(this.#accounts));
+        location.href = "https://akashraman.github.io/CodeAlgo/";
     }
 }
 
