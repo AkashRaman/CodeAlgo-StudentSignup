@@ -176,8 +176,6 @@ class Database {
 
         this.#currentAccount = new Student(firstName,lastName,email,regno,password);
         this.#accounts.push(this.#currentAccount)
-        localStorage.removeItem('currentAccount')
-        localStorage.removeItem('accounts')
         localStorage.setItem('currentAccount',JSON.stringify(this.#currentAccount));
         localStorage.setItem('accounts',JSON.stringify(this.#accounts));
         location.href = "https://akashraman.github.io/CodeAlgo/";
